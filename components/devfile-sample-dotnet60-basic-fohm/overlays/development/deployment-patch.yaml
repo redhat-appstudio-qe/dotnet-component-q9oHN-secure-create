@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-fohm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rsoaresd_org/spi-demos-hiwr-tenant/dotnet-component/devfile-sample-dotnet60-basic-fohm@sha256:b2a27715680fbd86602f5328fb685f8a180bfc969b420aa0984a90e420ceeeb5
+        name: main
+        resources: {}
+status: {}
